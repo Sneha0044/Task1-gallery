@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="A little collection of places worth remembering.">
+  <title>Elsewhere — A little photo journal</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Elsewhere home"><span class="wordmark-mark">e.</span> elsewhere</a>
+    <a class="header-note" href="#gallery">A photo journal <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> COLLECTION NO. 01 &nbsp;·&nbsp; PLACES</p>
+      <h1 id="page-title">A little bit<br><em>elsewhere.</em></h1>
+      <div class="intro-bottom">
+        <p>Small windows into the places that make<br class="desktop-break"> us slow down and look a little closer.</p>
+        <a class="explore-link" href="#gallery">EXPLORE THE COLLECTION <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE PHOTO JOURNAL</p><h2 id="gallery-heading">Collected moments <span>— 06</span></h2></div>
+        <div class="filters" role="group" aria-label="Filter photos">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All <span>06</span></button>
+          <button class="filter-button" type="button" data-filter="coast" aria-pressed="false">Coast</button>
+          <button class="filter-button" type="button" data-filter="city" aria-pressed="false">City</button>
+          <button class="filter-button" type="button" data-filter="nature" aria-pressed="false">Nature</button>
+        </div>
+      </div>
+
+      <div class="photo-grid">
+        <button class="photo-card photo-card--tall" data-category="coast" data-index="0" type="button" aria-label="Open Blue hour, Amalfi Coast">
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85" alt="Colorful houses above the blue Mediterranean Sea" loading="lazy">
+          <span class="photo-overlay"><span class="photo-caption"><span>01 / COAST</span><strong>Blue hour</strong><small>Amalfi Coast, Italy</small></span><span class="open-icon" aria-hidden="true">↗</span></span>
+        </button>
+        <button class="photo-card" data-category="nature" data-index="1" type="button" aria-label="Open The quiet path, Kyoto">
+          <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=1000&q=85" alt="A quiet path framed by the red gates of Kyoto" loading="lazy">
+          <span class="photo-overlay"><span class="photo-caption"><span>02 / NATURE</span><strong>The quiet path</strong><small>Kyoto, Japan</small></span><span class="open-icon" aria-hidden="true">↗</span></span>
+        </button>
+        <button class="photo-card" data-category="city" data-index="2" type="button" aria-label="Open After the rain, Paris">
+          <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1000&q=85" alt="Paris rooftops and a landmark beneath a soft sky" loading="lazy">
+          <span class="photo-overlay"><span class="photo-caption"><span>03 / CITY</span><strong>After the rain</strong><small>Paris, France</small></span><span class="open-icon" aria-hidden="true">↗</span></span>
+        </button>
+        <button class="photo-card" data-category="nature" data-index="3" type="button" aria-label="Open Into the wild, Iceland">
+          <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1000&q=85" alt="Deer standing in a sunlit forest" loading="lazy">
+          <span class="photo-overlay"><span class="photo-caption"><span>04 / NATURE</span><strong>Into the wild</strong><small>Þingvellir, Iceland</small></span><span class="open-icon" aria-hidden="true">↗</span></span>
+        </button>
+        <button class="photo-card" data-category="coast" data-index="4" type="button" aria-label="Open Salt in the air, Cinque Terre">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=85" alt="Hillside coastal village with colorful houses" loading="lazy">
+          <span class="photo-overlay"><span class="photo-caption"><span>05 / COAST</span><strong>Salt in the air</strong><small>Cinque Terre, Italy</small></span><span class="open-icon" aria-hidden="true">↗</span></span>
+        </button>
+        <button class="photo-card photo-card--wide" data-category="city" data-index="5" type="button" aria-label="Open The long way home, New York">
+          <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=1200&q=85" alt="New York street and city buildings at dusk" loading="lazy">
+          <span class="photo-overlay"><span class="photo-caption"><span>06 / CITY</span><strong>The long way home</strong><small>New York, USA</small></span><span class="open-icon" aria-hidden="true">↗</span></span>
+        </button>
+      </div>
+    </section>
+
+    <footer><span>ELSEWHERE <span class="footer-dot">·</span> A PHOTO JOURNAL</span><span>MADE TO REMEMBER THE LITTLE THINGS</span></footer>
+  </main>
+
+  <dialog class="lightbox" aria-label="Photo viewer">
+    <button class="lightbox-close" type="button" aria-label="Close photo viewer">×</button>
+    <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Previous photo">←</button>
+    <figure><img class="lightbox-image" src="" alt=""><figcaption><span class="lightbox-count"></span><span class="lightbox-title"></span><span class="lightbox-location"></span></figcaption></figure>
+    <button class="lightbox-arrow lightbox-next" type="button" aria-label="Next photo">→</button>
+  </dialog>
+</body>
+</html>
